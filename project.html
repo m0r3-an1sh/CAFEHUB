@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #CB8A26;
+        }
+        
+        li.navbar {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        li.navbar:hover {
+            color: red;
+            cursor: pointer;
+        }
+        
+        h1.navbar {
+            margin-left: 46%;
+        }
+        
+        p.column.leftside {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        
+        body {
+            background-color: #ffe394;
+        }
+        
+        video {
+            display: flex;
+            width: 68%;
+            height: 441px;
+            color: #ffe394;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+        
+        .animate {
+            display: flex;
+            height: 516px;
+            width: 100%;
+            margin-top: 2px;
+        }
+        
+        .col_img {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 15px;
+            box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.5), 0 0px 25px 0 rgba(0, 0, 0, 0.7);
+        }
+        /*!
+        .column {
+            float: left;
+            text-align: center;
+            background-color: #ffe394;
+            margin-bottom: 4%;
+        }
+        
+        .column.leftside {
+            height: 500;
+            width: 33%;
+        }
+        
+        .column.middle {
+            height: 500;
+            width: 34%;
+        }
+        
+        .column.rightside {
+            height: 500;
+            width: 33%;
+        }
+        */
+        
+        .footer {
+            display: flex;
+            text-align: center;
+            font-size: 20px;
+            text-shadow: 2px 2px 5px white;
+            background-color: #CB8A26;
+            padding: 20px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            h1.navbar {
+                margin-left: 38%;
+            }
+            li.navbar {
+                display: flex;
+                font-size: 10px;
+            }
+            .col_img {
+                height: 70%;
+                width: 70%;
+                margin-left: 16%;
+                box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.5), 0 0px 25px 0 rgba(0, 0, 0, 0.7);
+            }
+            .animate {
+                display: flex;
+                height: auto;
+                width: 100%;
+                margin-top: 2px;
+                margin-bottom: 55px;
+            }
+            video {
+                display: flex;
+                width: 68%;
+                height: auto;
+                color: #ffe394;
+                margin: auto;
+                margin-bottom: 25px;
+            }
+            .footer {
+                display: flex;
+                text-align: center;
+                font-size: 10px;
+                text-shadow: 2px 2px 5px white;
+                background-color: #CB8A26;
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <header>
+
+                <h1 class="navbar">
+                    CAFE HUB
+                </h1>
+                <ul style="list-style-type:none">
+                    <li class="navbar">
+                        <a href="project.html" style="text-decoration:none; color:inherit;">
+                       HOME
+                    </a>
+                    </li>
+                    <li class="navbar">
+                        <a href="register.html" style="text-decoration:none; color:inherit;">
+                       REGISTER
+                    </a>
+                    </li>
+                    <li class="navbar">
+                        <a href="login.html" style="text-decoration:none; color:inherit;">
+                        LOGIN
+                    </a>
+                    </li>
+                </ul>
+
+            </header>
+        </div>
+        <div class="row ">
+            <video src="animation.mp4" class="animate" autoplay loop></video>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-md-3  ">
+                <a href="ccd.html"><img src="6.jpg" class="col_img"></img>
+                </a>
+                <h2 class=" text-center">CAFE COFFEE DAY</h2>
+                <p class=" text-center">
+                    A LOT CAN HAPPEN OVER COFFEE
+                </p>
+            </div>
+
+            <div class="  col-md-3 ">
+                <a href="starbucks.html"><img src="5.jpg" class="col_img"></img>
+                </a>
+                <h2 class=" text-center">STARBUCKS</h2>
+                <p class=" text-center">
+                    BECAUSE GOOD THINGS HAPPEN WHEN WE GET TOGETHER
+                </p>
+            </div>
+
+            <div class="  col-md-3">
+                <a href="jumpinbeans.html"><img src="7.png" class="col_img"></img>
+                </a>
+                <h2 class=" text-center">JUMPIN' BEANS CAFE</h2>
+                <p class=" text-center">
+                    COFFEE IS ALL ABOUT CHOICE
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <video src="coffee.mp4" autoplay loop></video>
+        </div>
+        <div class="row">
+            <div class="footer">
+                !!!ARE YOU A COFFEE LOVER!!! ...THEN THIS WEBSITE IS FOR YOU... ....SELECT YOUR COFFEE TYPE ABOVE.... AND GET ALL THE INFORMATION YOU NEED ABOUT THE BEST CAFE'S NEAR YOU,AND ALL THE BEVERAGES TYPES AND DETAILS. ........THIS PROJECT IS CREATED BY GROUP
+                6........
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
